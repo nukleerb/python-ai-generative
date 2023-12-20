@@ -1,0 +1,14 @@
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-1, 1, 100)
+y = np.linspace(-1, 1, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(10 * np.sqrt(X ** 2 + Y ** 2)) / (10 + X ** 2 + Y ** 2)
+
+fig, ax = plt.subplots()
+ax.imshow(Z, cmap='gray')
+ax.axis('off')
+plt.show()
+```
