@@ -1,4 +1,4 @@
-```python
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -11,4 +11,3 @@ fig, ax = plt.subplots()
 ax.imshow(Z, cmap='gray')
 ax.axis('off')
 plt.show()
-```
